@@ -19,6 +19,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: red dashed 1px;
 }
 
 /* ETIQUETA QUE APLICA A TODO EL CUERPO,  */
@@ -29,7 +30,7 @@ body{
 /* ETIQUETAS QUE APLICAN AL TITULO DEL LOGO */
 .logo{
     font-family: Game Of Thrones;
-    font-size: 2em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
     align-items: center;
@@ -39,7 +40,7 @@ body{
 
 /* ETIQUETA QUE APLICA A LA IMAGEN, DA UN POCO DE ESPECIO ENTRE EL TITULO Y LA IMAGEN */
 .logo img{
-    padding-right: 20px;
+    padding-right: 15px;
 }
 
 /* ETIQUETAS PARA EL MENU */
@@ -48,7 +49,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 100px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +60,7 @@ body{
 /* ETIQUETAS PARA LOS HYPERVINCULOS DEL MENU QUE NO SEAN GAME OF THRONES */
 .navbar a{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     text-decoration: none;
     margin: 20px;
