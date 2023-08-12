@@ -11,7 +11,7 @@ outline: red dashed 1px;
 
 /* ETIQUETAS QUE APLICAR A TODA LA PAGINA */
 html{
-    background-color: white;
+    background-color: black;
 }
 
 /* ETIQUETAS QUE APLICAN A TODOS LOS OBJETOS DE LA PAGINA */
@@ -19,7 +19,6 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: red dashed 1px;
 }
 
 /* ETIQUETA QUE APLICA A TODO EL CUERPO,  */
@@ -97,7 +96,7 @@ body{
 .rasgostargaryen p{
     padding: 50px;
     text-align: center;
-    font-family: Game Of Thrones;
+    font-family: 'Poppins', sans-serif;
     color: white;
     line-height: 2;
 }
@@ -106,9 +105,9 @@ body{
 .rasgostargaryen h3{
     padding: 5px;
     text-align: center;
-    font-family: Game Of Thrones;
+    font-family: 'Poppins', sans-serif;
     color: white;
-    font-weight: 100;
+    margin-top: 0;
 }
 
 /* ETIQUETAS PARA LA FRASE DE LA PAGINA PRINCIPAL */
@@ -133,7 +132,18 @@ body{
     padding-right: 50vh;
 }
 
+.rasgostargaryen{
+    padding-bottom: 40px;
+    table-layout: fixed;
+    columns: 50%;
+}
 
+.rasgostargaryen img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    padding-bottom: 50px;
+}
 
 
 
