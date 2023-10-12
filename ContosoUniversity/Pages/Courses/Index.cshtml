@@ -1,0 +1,43 @@
+@page
+@model ContosoUniversity.Pages.Courses.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="container">
+<h1 style="margin:50px 0 50px 0">Crear un Curso</h1>
+
+<p>
+    <a asp-page="Create" >Crear un Curso Nuevo</a>
+</p>
+<table class="table table-bordered " style="margin-top: 50px;">
+    <thead>
+        <tr>
+            <th class="table-secondary">
+                @Html.DisplayNameFor(model => model.Course[0].Title)
+            </th>
+            <th class="table-secondary">
+                @Html.DisplayNameFor(model => model.Course[0].Credits)
+            </th>
+            <th class="table-secondary"></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Course) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Credits)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.CourseID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.CourseID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.CourseID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
